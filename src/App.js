@@ -8,6 +8,13 @@ function App() {
     const [appelsCounter, setAppelsCounter] = useState(0)
     const [kiwiCounter, setKiwiCounter] = useState(0)
 
+    function countersToZero (){
+        setKiwiCounter(0)
+        setAppelsCounter(0)
+        setBananenCounter(0)
+        setAardbijCounter(0)
+    }
+
     return (
         <>
             <h1>Fruitmand bezorgservice</h1>
@@ -68,6 +75,12 @@ function App() {
                     +
                 </button>
             </article>
+            <div>
+                <button type={"button"}
+                        onClick={() => countersToZero()}
+                >Reset
+                </button>
+            </div>
         </>
     )
 }

@@ -48,7 +48,7 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
       [v] en één die de hoeveelheid verlaagd (`-`)
   [v] De hoeveelheid mag door de gebruiker niet lager gezet worden dan 0
   [v] De hoeveelheid geselecteerde fruittypes wordt bij iedere update getoond aan de gebruiker
-  [] Er is ook een reset button, die alle counters weer op 0 zet.
+  [v] Er is ook een reset button, die alle counters weer op 0 zet.
 
 ## Opdracht 2 - Formulier bouwen
   Het is natuurlijk lastig om een fruitmand te bestellen als we niet weten waar die mand naartoe moet. 
