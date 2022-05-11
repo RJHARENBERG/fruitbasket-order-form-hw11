@@ -61,24 +61,24 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
   [] Heb je tijd over? Kijk dan vooral bij de bonusopdrachten!
 
 ### Randvoorwaarden formulier
-  [] Het formulier bevat de volgende velden:
-    [] Voornaam 
-    [] Achternaam
-    [] Leeftijd
-    [] Postcode
-    [] Selectbox met: 
-        [] bezorgfrequentie. 
-        [] _Opties_: 
-            [] iedere week, 
-            [] om de week, 
-            [] iedere maand
-    [] Radiobuttons met tijdvak. 
-      [] _Opties_: 
-          [] overdag, 
-          [] 's avonds
-    [] Opmerking (textarea)
-    [] Akkoord met de voorwaarden (checkbox)
-    [] Verzendbutton
+  [v] Het formulier bevat de volgende velden:
+    [v] Voornaam 
+    [v] Achternaam
+    [v] Leeftijd
+    [v] Postcode
+    [v] Selectbox met: 
+        [v] bezorgfrequentie. 
+        [v] _Opties_: 
+            [v] iedere week, 
+            [v] om de week, 
+            [v] iedere maand
+    [v] Radiobuttons met tijdvak. 
+      [v] _Opties_: 
+          [v] overdag, 
+          [v] 's avonds
+    [v] Opmerking (textarea)
+    [v] Akkoord met de voorwaarden (checkbox)
+    [v] Verzendbutton
     [] Pas wanneer de gebruiker op verzenden drukt, worden de 
       [] formulier-waardes 
       [] én de fruit-waardes in de console gelogd!
