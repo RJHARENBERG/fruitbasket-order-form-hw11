@@ -46,8 +46,8 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
   [v] Elk type fruit heeft twee buttons: 
       [v] één die de hoeveelheid verhoogd (`+`) 
       [v] en één die de hoeveelheid verlaagd (`-`)
-  [] De hoeveelheid mag door de gebruiker niet lager gezet worden dan 0
-  [] De hoeveelheid geselecteerde fruittypes wordt bij iedere update getoond aan de gebruiker
+  [v] De hoeveelheid mag door de gebruiker niet lager gezet worden dan 0
+  [v] De hoeveelheid geselecteerde fruittypes wordt bij iedere update getoond aan de gebruiker
   [] Er is ook een reset button, die alle counters weer op 0 zet.
 
 ## Opdracht 2 - Formulier bouwen

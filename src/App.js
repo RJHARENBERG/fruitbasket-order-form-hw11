@@ -15,52 +15,56 @@ function App() {
             <article>
                 <h2> Bananen 🍌</h2>
                 <button type={"button"}
-                        onClick={() => setBananenCounter(bananenCounter -1)}>
+                        onClick={() => setBananenCounter(bananenCounter - 1)}
+                        disabled={bananenCounter === 0}>
                     -
                 </button>
                 <span>{bananenCounter}</span>
                 <button
                     type="button"
-                    onClick={() => setBananenCounter(bananenCounter +1)}>
+                    onClick={() => setBananenCounter(bananenCounter + 1)}>
                     +
                 </button>
             </article>
             <article>
                 <h2>Aarbeien 🍓</h2>
                 <button type={"button"}
-                        onClick={() => setAardbijCounter(aardbijCounter -1)}>
+                        onClick={() => setAardbijCounter(aardbijCounter - 1)}
+                        disabled={aardbijCounter === 0}>
                     -
                 </button>
                 <span>{aardbijCounter}</span>
                 <button
                     type="button"
-                    onClick={() => setAardbijCounter(aardbijCounter +1)}>
+                    onClick={() => setAardbijCounter(aardbijCounter + 1)}>
                     +
                 </button>
             </article>
             <article>
                 <h2>Appels 🍏</h2>
                 <button type={"button"}
-                        onClick={() => setAppelsCounter(appelsCounter -1)}>
+                        onClick={() => setAppelsCounter(appelsCounter - 1)}
+                        disabled={appelsCounter === 0}>
                     -
                 </button>
                 <span>{appelsCounter}</span>
                 <button
                     type="button"
-                    onClick={() => setAppelsCounter(appelsCounter +1)}>
+                    onClick={() => setAppelsCounter(appelsCounter + 1)}>
                     +
                 </button>
             </article>
             <article>
                 <h2>Kiwi's 🥝</h2>
                 <button type={"button"}
-                        onClick={() => setKiwiCounter(kiwiCounter -1)}>
+                        onClick={() => setKiwiCounter(kiwiCounter - 1)}
+                        disabled={kiwiCounter === 0}>
                     -
                 </button>
                 <span>{kiwiCounter}</span>
                 <button
                     type="button"
-                    onClick={() => setKiwiCounter(kiwiCounter +1)}>
+                    onClick={() => setKiwiCounter(kiwiCounter + 1)}>
                     +
                 </button>
             </article>
