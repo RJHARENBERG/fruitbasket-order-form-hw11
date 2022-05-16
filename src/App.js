@@ -13,8 +13,12 @@ function App() {
     const [ageMessageValue, setAgeMessageValue] = React.useState(0)
     const [zipCodeMessage, setZipCodeMessage] = React.useState('')
 
+    const [deliveryFrequency, setDeliveryFrequency] = React.useState('Iedere week')
+
     const [deliveryDayTime, toggleDeliveryDayTime] = React.useState(false)
     const [deliveryEvening, toggleDeliveryEvening] = React.useState(false)
+
+    const [commentsMessageValue, setCommentsMessageValue] = React.useState('')
 
     const [termsAndConditionsValue, toggleTermesAndConditionsValue] = React.useState(false)
 
@@ -23,6 +27,18 @@ function App() {
         setAppelsCounter(0)
         setBananenCounter(0)
         setAardbijCounter(0)
+    }
+
+    function daypart() {
+        if (deliveryDayTime === true) {
+            return "Day time"
+        } else return "Evening"
+    }
+
+    function sendOrder() {
+        console.log(`Order plaste\n\nFirst name: ${firstNameMessageValue}\nLast name: ${lastNameMessageValue}\nAge: ${ageMessageValue}\nZip code: ${zipCodeMessage}\n\nDelivery frequency: ${deliveryFrequency}\n\nDaypart: ${daypart()}\n\n${firstNameMessageValue}'s Order is: `)
+        console.log(`Bananen ${bananenCounter}\nAardbeien ${aardbijCounter}\nAppels ${appelsCounter}\nKiwi's${kiwiCounter} `)
+        console.log(`Comments: \n${commentsMessageValue}\n\n${firstNameMessageValue} agreement is ${termsAndConditionsValue}`)
     }
 
     return (
@@ -102,7 +118,6 @@ function App() {
 
             </main>
 
-            {/*===================================================================*/}
             <form>
                 <label htmlFor="FirstName">
                     Voornaam
@@ -148,11 +163,10 @@ function App() {
 
                 <h2>Bezorg frequentie</h2>
 
-                <input
-                    list="deliveryFrequency"
-                />
+
                 <select
-                    id="deliveryFrequency">
+                    id="deliveryFrequency"
+                    onChange={(e) => setDeliveryFrequency(e.target.value)}>
                     <option value="Iedere week">Iedere week</option>
                     <option value="om de week">om de week</option>
                     <option value="iedere maand">iedere maand</option>
@@ -187,11 +201,12 @@ function App() {
                         id="massage"
                         name="massage"
                         rows="10"
-                        cols="30">
+                        cols="30"
+                        onChange={(e) => setCommentsMessageValue(e.target.value)}
+                    >
 
                     </textarea>
                 </label>
-
 
                 <label
                     htmlFor="akkoord">
@@ -206,7 +221,10 @@ function App() {
                 </label>
 
                 <button
-                    type="submit">
+                    type="button"
+                    onClick={() => sendOrder()}
+                >
+
                     Verzend
                 </button>
             </form>

@@ -26,13 +26,13 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
     [v] elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op de webpagina.
 
 ## Opdracht 1 - State
-  [] Gebruikers gaan zelf aan de slag met het samenstellen van hun fruitmand. 
-  [] Ze hebben de keuze tussen vier typen fruit waarvan ze de aantallen mogen bepalen:
+  [v] Gebruikers gaan zelf aan de slag met het samenstellen van hun fruitmand. 
+  [v] Ze hebben de keuze tussen vier typen fruit waarvan ze de aantallen mogen bepalen:
 
 ![fruit-counters](./src/assets/screenshot-fruit-counters.png)
 
-  [] Zoals je ziet is de styling niet belangrijk, 
-  [] focus je in eerste instantie op de functionaliteit. 
+  [v] Zoals je ziet is de styling niet belangrijk, 
+  [v] focus je in eerste instantie op de functionaliteit. 
   Heb je tijd over?:
   [] Kijk dan vooral bij de bonusopdrachten!
 
@@ -56,8 +56,8 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
 
 ![formulier-no-styling](./src/assets/screenshot-form.png)
 
-  [] Zoals je ziet is de styling niet belangrijk, 
-  [] focus je in eerste instantie op de functionaliteit. 
+  [v] Zoals je ziet is de styling niet belangrijk, 
+  [v] focus je in eerste instantie op de functionaliteit. 
   [] Heb je tijd over? Kijk dan vooral bij de bonusopdrachten!
 
 ### Randvoorwaarden formulier
@@ -79,9 +79,9 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
     [v] Opmerking (textarea)
     [v] Akkoord met de voorwaarden (checkbox)
     [v] Verzendbutton
-    [] Pas wanneer de gebruiker op verzenden drukt, worden de 
-      [] formulier-waardes 
-      [] én de fruit-waardes in de console gelogd!
+    [v] Pas wanneer de gebruiker op verzenden drukt, worden de 
+      [v] formulier-waardes 
+      [v] én de fruit-waardes in de console gelogd!
 
 ## Opdracht 3 - Componenten maken
 Maak eigen componenten van elementen die je heel veel hebt hergebruikt. 
