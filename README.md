@@ -85,14 +85,14 @@ of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina
 
 ## Opdracht 3 - Componenten maken
 Maak eigen componenten van elementen die je heel veel hebt hergebruikt. 
-  [] Om dit voor elkaar te krijgen zul je de state moeten bijhouden in `App.js` 
-  [] en zowel waardes als functies door moeten geven als 
-      [] properties 
-      [] _(callback props)_. Denk hierbij aan:
-        [] De reset- en verzenden button (die lijken erg op elkaar, toch?)
-        [] De - counter + combinatie
-        [] De label- en text-input combinatie
-        [] Ga zo maar door!
+  [v] Om dit voor elkaar te krijgen zul je de state moeten bijhouden in `App.js` 
+  [v] en zowel waardes als functies door moeten geven als 
+      [v] properties 
+      [v] _(callback props)_. Denk hierbij aan:
+        [v] De reset- en verzenden button (die lijken erg op elkaar, toch?)
+        [v] De - counter + combinatie
+        [v] De label- en text-input combinatie
+        [v] Ga zo maar door!
 
 ## Bonus opdrachten
     [] Maak er een mooie gestylde pagina van!

@@ -1,5 +1,6 @@
 import './App.css';
-// import counter from "./componenten/counter/counter";
+import Counter from './componenten/counter/counter'
+// import ResetButton from './componenten/buttons/resetButton'
 import React, {useState} from "react";
 
 function App() {
@@ -22,11 +23,11 @@ function App() {
 
     const [termsAndConditionsValue, toggleTermesAndConditionsValue] = React.useState(false)
 
-    function countersToZero() {
-        setKiwiCounter(0)
-        setAppelsCounter(0)
-        setBananenCounter(0)
-        setAardbijCounter(0)
+    function countersToZero(input) {
+        setKiwiCounter(input)
+        setAppelsCounter(input)
+        setBananenCounter(input)
+        setAardbijCounter(input)
     }
 
     function daypart() {
@@ -45,73 +46,32 @@ function App() {
         <>
             <h1>Fruitmand bezorgservice</h1>
             <main>
-                <article>
-                    <h2> Bananen 🍌</h2>
-                    <div>
-                        <button type={"button"}
-                                onClick={() => setBananenCounter(bananenCounter - 1)}
-                                disabled={bananenCounter === 0}>
-                            -
-                        </button>
-                        <span>{bananenCounter}</span>
-                        <button
-                            type="button"
-                            onClick={() => setBananenCounter(bananenCounter + 1)}>
-                            +
-                        </button>
-                    </div>
-                </article>
-                <article>
-                    <h2>Aarbeien 🍓</h2>
-                    <div>
-                        <button type={"button"}
-                                onClick={() => setAardbijCounter(aardbijCounter - 1)}
-                                disabled={aardbijCounter === 0}>
-                            -
-                        </button>
-                        <span>{aardbijCounter}</span>
-                        <button
-                            type="button"
-                            onClick={() => setAardbijCounter(aardbijCounter + 1)}>
-                            +
-                        </button>
-                    </div>
-                </article>
-                <article>
-                    <h2>Appels 🍏</h2>
-                    <div>
-                        <button type={"button"}
-                                onClick={() => setAppelsCounter(appelsCounter - 1)}
-                                disabled={appelsCounter === 0}>
-                            -
-                        </button>
-                        <span>{appelsCounter}</span>
-                        <button
-                            type="button"
-                            onClick={() => setAppelsCounter(appelsCounter + 1)}>
-                            +
-                        </button>
-                    </div>
-                </article>
-                <article>
-                    <h2>Kiwi's 🥝</h2>
-                    <div>
-                        <button type={"button"}
-                                onClick={() => setKiwiCounter(kiwiCounter - 1)}
-                                disabled={kiwiCounter === 0}>
-                            -
-                        </button>
-                        <span>{kiwiCounter}</span>
-                        <button
-                            type="button"
-                            onClick={() => setKiwiCounter(kiwiCounter + 1)}>
-                            +
-                        </button>
-                    </div>
-                </article>
+                <Counter
+                fruitName={"Bananen 🍌"}
+                hook={bananenCounter}
+                setHook={setBananenCounter}
+                />
+                <Counter
+                fruitName={"Aarbeien 🍓"}
+                hook={aardbijCounter}
+                setHook={setAardbijCounter}
+                />
+                <Counter
+                fruitName={"Appels 🍏"}
+                hook={appelsCounter}
+                setHook={setAppelsCounter}
+                />
+               <Counter
+               fruitName={"Kiwi's 🥝"}
+               hook={kiwiCounter}
+               setHook={setKiwiCounter}
+               />
+                {/*<ResetButton*/}
+                {/*/>*/}
+
                 <div>
                     <button type={"button"}
-                            onClick={() => countersToZero()}
+                            onClick={() => countersToZero(0)}
                     >Reset
                     </button>
                 </div>
@@ -170,6 +130,10 @@ function App() {
                     <option value="Iedere week">Iedere week</option>
                     <option value="om de week">om de week</option>
                     <option value="iedere maand">iedere maand</option>
+
+                    {/*<input*/}
+                    {/*    list="deliveryFrequency"*/}
+                    {/*/>*/}
                 </select>
 
                 <label
